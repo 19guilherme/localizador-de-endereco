@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      
+      <nav>
+        <ul class="navegacao nav-1">
+          <li class="acess" onclick="mostrar()"><a href="#">Acessibilidade</a>
+            <ul class="acess-nav">
+                <li><a href="#">Ir para o conteúdo</a></li>
+                <li><a href="#">Ir para o menu</a></li>
+                <li><a href="#">Ir para o rodapé</a></li>
+                <li><a href="#">Alto contraste</a></li>
+                <li><a href="#">Libras</a></li>
+                <li><a href="#">Saiba mais sobre Acessibilidade</a></li>
+            </ul>
+          </li>
+
+          <li class="port"><a href="#">Português</a></li>
+        </ul>
+
+        <div class="menu">
+          <div class="btn" onclick="clicar()">
+            <div class="btn-left"></div>
+            <div class="btn-right"></div>
+          </div>
+          <ul class="navegacao nav-2">
+            <p>Busca CEP</p>
+            <li><a href="#">Voltar ao menu</a></li>
+            <li><a href="#">Por Endereço ou CEP</a></li>
+            <li><a href="#">Por Localidade/Logradouro</a></li>
+            <li><a href="#">Por CEP</a></li>
+            <li><a href="#">Logradouro por Bairro</a></li>
+            <li><a href="#">Faixa de CEP por UF/Localidade</a></li>
+            <li><a href="#">Caixa Postal</a></li>
+            <li><a href="#">clique e Retire</a></li>
+            <li><a href="#">Locker</a></li>
+            <li><a href="#">Agência Modular</a></li>
+          </ul>
+          <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" class="logo">
+            <img src="/img/correios-logo.png" alt="Logo Correios" id="img-logo">
+          </a>
+        </div> 
+      </nav>
+    </header>
+  <main id="principal">
+    <div id="navegacao-pagina">
+      <a href="#" id="pagina-antes">Página Anterior</a>
+      <a href="#" id="acesso"></a>
+      <a href="#" id="pagina-depois">Página principal</a>
+    </div>
+    <div class="container-busca">
+      <form id="formulario">
+        <h2>Buscar pelo CEP</h2>
+        <div class="form-grupo"> 
+          <label for="cep">Digite seu CEP:</label>
+          <input type="text" placeholder="Dígite seu CEP" name="cep" maxlength="9" id="cep">
+          <small>00000-000</small>
+        </div>
+  
+        <div class="form-grupo">
+          <label for="logradouro">Endereço</label>
+          <input type="text" name="logradouro" maxlength="30" id="logradouro">
+        </div>
+  
+        <div class="form-grupo">
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" id="bairro">
+        </div>
+  
+        <div class="form-grupo">
+          <label for="localidade">Cidade</label>
+          <input type="text" name="localidade" id="localidade">
+        </div>
+  
+        <div class="form-grupo">
+          <label for="uf">Estado</label>
+          <input type="text" name="uf" id="uf">
+        </div>
+      </form>
+    </div>
+  </main>  
+  <footer>
+    <div id="container-footer">
+      <div class="coluna-footer">
+        <h3>Fale Conosco</h3>
+        <a href="#"><span class="emogi">✯</span> Registro de manifestações</a>
+        <a href="#"><span class="emogi">✯</span> Central de atendimento</a> 
+        <a href="#"><span class="emogi">✯</span> Soluções para o seu negócio </a>
+        <a href="#"><span class="emogi">✯</span> Suporte ao cliente com contrato</a> 
+        <a href="#"><span class="emogi">✯</span> Ouvidoria</a> 
+        <a href="#"><span class="emogi">✯</span> Denúncia</a>
+      </div> 
+      <div class="coluna-footer">
+        <h3>Sobre os Correios</h3>
+        <a href="#"><span class="emogi">✯</span> Identidade corporativa</a>
+        <a href="#"><span class="emogi">✯</span> Educação e cultura</a>
+        <a href="#"><span class="emogi">✯</span> Código de Conduta Ética e Integridade</a>
+        <a href="#"><span class="emogi">✯</span> Transparência e prestação de contas</a>
+        <a href="#"><span class="emogi">✯</span> Política de privacidade e cookies</a>
+      </div> 
+      <div class="coluna-footer coluna-ultima">
+        <h3>Outros Sites</h3>
+        <a href="#"><span class="emogi">✯</span> Loja online dos Correios</a>
+        <a href="#"><span class="emogi">✯</span> Postalis</a>
+        <a href="#"><span class="emogi">✯</span> Postal Saúde</a>
+      </div>
+    </div>
+    <p><span>©</span> Criador por GuilhermeJosué</p>
+  </footer>
+  
+
+  
+<script src="script.js"></script>
+</body>
+</html>
