@@ -9,6 +9,25 @@ const showData = (resultado) => {
   }
 }
 
+cep.addEventListener("blur", (event) => {
+  const cepResult = cep.value.replace("-","")
+  console.log(cep.value)
+
+  const opcao = {
+    method: 'GET',
+    mode: 'cors',
+    cache: 'default'
+  }
+
+  const response = fetch(`https://viacep.com.br/ws/${cep.value}/json/`, opcao)
+  .then(response => {response.json()
+    .then( data => showData(data));
+  })
+  
+
+  })
+
+
 cep.addEventListener("keypress", function(event){
   const cepResult = cep.value.replace("-","")
   if (event.key === "Enter"){
